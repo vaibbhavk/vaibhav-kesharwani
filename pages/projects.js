@@ -22,7 +22,7 @@ export default function Projects({ projects = [] }) {
         </h1>
         <p className="mb-4 text-gray-600 dark:text-gray-400">
           Here are some of the projects that I enjoyed building from scratch.
-          Web, Android, Machine Learning, and Business Analytics.
+          Web, Android, Machine Learning, Business Analytics and Business Data Management.
         </p>
 
         <div className="grid mt-4 gap-4 w-full">
