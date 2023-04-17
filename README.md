@@ -1,4 +1,4 @@
-# [vaibhav-kesharwani.me](https://vaibhav-kesharwani.me/)
+# My Portfolio
 
 ## Tech Stack
 
