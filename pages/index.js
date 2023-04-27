@@ -37,7 +37,7 @@ const Home = ({ educations = [], experiences = [] }) => {
               <div className="flex items-center mb-1">
                 <MdLocationPin size="1em" />
                 <p className="ml-1 text-gray-600 dark:text-gray-400 text-sm">
-                  Satna, Madhya Pradesh, India
+                  Gwalior, Madhya Pradesh, India
                 </p>
               </div>
 
