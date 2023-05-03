@@ -1,6 +1,6 @@
 import cn from "classnames";
 import Image from "next/image";
-import { FaExternalLinkAlt, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaExternalLinkAlt, FaCode, FaLinkedinIn } from "react-icons/fa";
 
 export default function ProjectCard({
   name,
@@ -47,7 +47,7 @@ export default function ProjectCard({
                 rel="noopener noreferrer"
                 className="mr-6 md:mr-0"
               >
-                <FaGithub
+                <FaCode
                   className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-100"
                   size="1.5em"
                   color="#181717"
