@@ -61,9 +61,9 @@ export default function Container(props) {
           <Link href="/">
             <Image
               src="/vk.png"
-              alt="Vaibhav Kesharwani"
-              width={40}
-              height={40}
+              alt="VK"
+              width={45}
+              height={45}
               style={{ width: "auto", height: "auto" }}
             />
           </Link>
