@@ -1,6 +1,4 @@
-import { FaGraduationCap } from "react-icons/fa";
 import { MdLocationPin } from "react-icons/md";
-import { SlGraduation } from "react-icons/sl";
 
 export default function EducationCard({ name, college, location, date }) {
   return (

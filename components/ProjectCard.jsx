@@ -1,6 +1,6 @@
 import cn from "classnames";
 import Image from "next/image";
-import { FaExternalLinkAlt, FaCode, FaLinkedinIn } from "react-icons/fa";
+import { FaExternalLinkAlt, FaCode } from "react-icons/fa";
 
 export default function ProjectCard({
   name,

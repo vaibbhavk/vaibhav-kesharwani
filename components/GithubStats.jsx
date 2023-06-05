@@ -6,7 +6,6 @@ import useSWR from "swr";
 import DownArrowIcon from "./DownArrowIcon";
 import UpArrowIcon from "./UpArrowIcon";
 import GithubValue from "./GithubValue";
-import Link from "next/link";
 
 const GithubStats = ({ question, answer }) => {
   const { data, error } = useSWR("/api/github", fetcher);

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { MdLocationPin } from "react-icons/md";
 
 export default function ExperienceCard({
