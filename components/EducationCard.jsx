@@ -12,7 +12,7 @@ export default function EducationCard({ name, college, location, date }) {
         {college}
       </p>
       <div className="flex items-center mb-2">
-        <MdLocationPin size="1em" />
+        <MdLocationPin size="1em" className="text-gray-600 dark:text-gray-400"/>
         <p className="ml-1 text-gray-600 dark:text-gray-400 text-sm">
           {location}
         </p>

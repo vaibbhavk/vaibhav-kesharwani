@@ -28,14 +28,14 @@ const Home = ({ educations = [], experiences = [] }) => {
               </h1>
 
               <div className="flex items-center mb-1">
-                <MdEmail size="1em" />
+                <MdEmail size="1em" className="text-gray-600 dark:text-gray-400"/>
 
                 <p className="ml-1 text-gray-600 dark:text-gray-400 text-sm">
                   vaibhav.vk2128@gmail.com
                 </p>
               </div>
-              <div className="flex items-center mb-1">
-                <MdLocationPin size="1em" />
+              <div className="flex items-center mb-4">
+                <MdLocationPin size="1em" className="text-gray-600 dark:text-gray-400"/>
                 <p className="ml-1 text-gray-600 dark:text-gray-400 text-sm">
                   Gwalior, Madhya Pradesh, India
                 </p>
