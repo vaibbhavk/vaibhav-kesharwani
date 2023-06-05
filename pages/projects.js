@@ -17,7 +17,7 @@ export default function Projects({ projects = [] }) {
       description="A collection of my projects."
     >
       <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
-        <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
+        <h1 className="mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
           Projects
         </h1>
         <p className="mb-4 text-gray-600 dark:text-gray-400">

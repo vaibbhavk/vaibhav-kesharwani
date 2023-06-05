@@ -23,7 +23,7 @@ export default function ProjectCard({
           <Image alt={name} fill src={logo} sizes={30} priority />
         </a>
         <div className="flex flex-col md:items-end items-start text-gray-800 dark:text-gray-200 p-5 absolute md:relative md:text-right text-left">
-          <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white truncate">
+          <h3 className="font-bold text-xl md:text-3xl tracking-tight mb-6 text-black dark:text-white truncate">
             {name}
           </h3>
           <p className="mb-4 text-gray-600 dark:text-gray-400 w-[250px] sm:w-full">
