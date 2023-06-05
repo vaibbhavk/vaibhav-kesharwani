@@ -18,7 +18,7 @@ yarn run dev
 
 Create a `.env` file similar to [`.env.example`](https://github.com/vaibbhavk/my-portfolio/blob/main/.env.example).
 
-Note: Not using Github API as of now.
+Note: Not using Github API for now.
 
 ## Author
 
