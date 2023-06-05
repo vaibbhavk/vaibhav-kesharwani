@@ -42,8 +42,8 @@ const Home = ({ educations = [], experiences = [] }) => {
               </div>
 
               <p className="text-gray-600 dark:text-gray-400 mb-16">
-                Computer Science Student | Web Developer | Android Developer |
-                Freelancer | Data Scientist
+                Computer Science Student | Certified Data Scientist | Web Developer | Android Developer |
+                Freelancer
               </p>
             </div>
             <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
