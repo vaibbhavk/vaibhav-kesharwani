@@ -11,7 +11,7 @@ export default function ExperienceCard({
 }) {
   return (
     <div className="border border-grey-200 dark:border-gray-800 rounded p-4 w-full bg-white dark:bg-gray-900">
-      <h3 className="text-lg font-bold text-left mb-1 text-gray-900 dark:text-gray-100">
+      <h3 className="text-lg font-bold text-left mb-1 bg-gradient-to-r from-[#000000] via-[#888888] to-[#000000] bg-clip-text text-transparent">
         {name}
       </h3>
       <div className="flex items-center mb-2">
@@ -22,7 +22,10 @@ export default function ExperienceCard({
       </div>
 
       <div className="flex items-center mb-2">
-        <MdLocationPin size="1em" className="text-gray-600 dark:text-gray-400"/>
+        <MdLocationPin
+          size="1em"
+          className="text-gray-600 dark:text-gray-400"
+        />
         <p className="ml-1 text-gray-600 dark:text-gray-400 text-sm">
           {location}
         </p>
