@@ -13,7 +13,7 @@ export default function ProjectCard({
 }) {
   return (
     <div className={cn("", "rounded-xl w-full bg-gradient-to-r p-1", gradient)}>
-      <div className="flex flex-col md:flex-row justify-start md:justify-center items-start md:items-center overflow-hidden h-full bg-white dark:bg-gray-900 rounded-lg">
+      <div className="flex flex-col md:flex-row justify-start md:justify-center items-start md:items-center overflow-hidden h-full w-full bg-white dark:bg-gray-900 rounded-lg">
         <a
           href={url}
           target="_blank"
@@ -33,7 +33,7 @@ export default function ProjectCard({
             {tech.map((t, index) => (
               <li
                 key={index}
-                className="mr-6 md:ml-6 md:mr-0 text-sm text-gray-400"
+                className="mr-1 md:ml-1 md:mr-0 text-sm text-white border-2 px-2 py-1 rounded-full bg-gray-400"
               >
                 {t}
               </li>
