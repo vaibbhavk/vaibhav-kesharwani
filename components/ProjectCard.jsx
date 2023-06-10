@@ -18,7 +18,7 @@ export default function ProjectCard({
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full h-[300px] md:h-[400px] md:w-[400px] shrink-0 relative sm:mb-0 mr-auto md:hover:opacity-100 opacity-10 transform hover:scale-[1.05] transition-all"
+          className="w-full h-[300px] md:h-[400px] md:w-[400px] shrink-0 relative sm:mb-0 mr-auto md:hover:opacity-100 opacity-10 transform transition-all"
         >
           <Image alt={name} fill src={logo} sizes={30} priority />
         </a>
