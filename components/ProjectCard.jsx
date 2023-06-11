@@ -2,72 +2,77 @@ import cn from "classnames";
 import Image from "next/image";
 import { FaExternalLinkAlt, FaCode } from "react-icons/fa";
 
+import { BsFiletypeDocx } from "react-icons/bs";
+
 export default function ProjectCard({
   name,
   desc,
   logo,
   url,
-  github,
+  github_url,
+  doc_url,
   tech,
   gradient,
 }) {
   return (
-    <div className={cn("", "rounded-xl w-full bg-gradient-to-r p-1", gradient)}>
-      <div className="flex flex-col md:flex-row justify-start md:justify-center items-start md:items-center overflow-hidden h-full w-full bg-white dark:bg-gray-900 rounded-lg">
-        <a
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full h-[300px] md:h-[400px] md:w-[400px] shrink-0 relative sm:mb-0 mr-auto md:hover:opacity-100 opacity-10 transform transition-all"
-        >
-          <Image alt={name} fill src={logo} sizes={30} priority />
-        </a>
-        <div className="flex flex-col md:items-end items-start text-gray-800 dark:text-gray-200 p-5 absolute md:relative md:text-right text-left">
+    <div className={cn("", "rounded-lg bg-gradient-to-r p-1", gradient)}>
+      <div className="w-full h-full bg-white rounded-lg p-2">
+        <div className="relative w-full h-[230px] hidden sm:block">
+          <Image
+            src={logo}
+            alt={name}
+            fill
+            sizes={30}
+            className="object-contain rounded-lg"
+            priority
+          />
+        </div>
+
+        <div className="mt-4">
           <h3 className="font-bold text-xl md:text-3xl tracking-tight mb-6 bg-gradient-to-r from-[#000000] via-[#888888] to-[#000000] bg-clip-text text-transparent truncate">
             {name}
           </h3>
-          <p className="mb-4 text-gray-600 dark:text-gray-400 w-[250px] sm:w-full">
+          <p className="mt-2 text-secondary whitespace-pre-line text-gray-600 dark:text-gray-400">
             {desc}
           </p>
-          <ul className="flex flex-wrap mb-4 grow">
-            {tech.map((t, index) => (
-              <li
-                key={index}
-                className="mr-1 md:ml-1 md:mr-0 text-sm text-white border-2 px-2 py-1 rounded-full bg-gray-400"
-              >
-                {t}
-              </li>
-            ))}
-          </ul>
-          <div className="flex justify-center items-center">
-            {github && (
-              <a
-                href={github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-6 md:mr-0"
-              >
-                <FaCode
-                  className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-100"
-                  size="1.5em"
-                  color="#181717"
-                />
-              </a>
-            )}
-            {url && (
-              <a
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="md:ml-6"
-              >
-                <FaExternalLinkAlt
-                  className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-100"
-                  size="1.5em"
-                />
-              </a>
-            )}
-          </div>
+        </div>
+
+        <div className="mt-4 flex flex-wrap gap-2">
+          {github_url && (
+            <a href={github_url} target="_blank" rel="noopener noreferrer">
+              <FaCode
+                className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-100"
+                size="1.5em"
+                color="#181717"
+              />
+            </a>
+          )}
+
+          {url && (
+            <a href={url} target="_blank" rel="noopener noreferrer">
+              <FaExternalLinkAlt
+                className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-100"
+                size="1.5em"
+              />
+            </a>
+          )}
+
+          {doc_url && (
+            <a href={doc_url} target="_blank" rel="noopener noreferrer">
+              <BsFiletypeDocx
+                className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-100"
+                size="1.5em"
+              />
+            </a>
+          )}
+        </div>
+
+        <div className="mt-4 flex flex-wrap gap-2">
+          {tech.map((t, index) => (
+            <p key={index} className="text-[14px]">
+              #{t}
+            </p>
+          ))}
         </div>
       </div>
     </div>

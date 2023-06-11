@@ -22,7 +22,8 @@ export default function Projects({ projects = [] }) {
         </h1>
         <p className="mb-4 text-gray-600 dark:text-gray-400">
           Here are some of the projects that I enjoyed building from scratch.
-          Web, Android, Machine Learning, Business Analytics and Business Data Management.
+          Web, Android, Machine Learning, Business Analytics and Business Data
+          Management.
         </p>
 
         <div className="grid mt-4 gap-4 w-full">
@@ -33,7 +34,8 @@ export default function Projects({ projects = [] }) {
               desc={p.desc}
               logo={urlForImage(p.logo).url()}
               url={p.url ? p.url : null}
-              github={p.github ? p.github : null}
+              github_url={p.github_url ? p.github_url : null}
+              doc_url={p.doc_url ? p.doc_url : null}
               tech={p.tech}
               gradient={gradients[index % gradients.length]}
             />
